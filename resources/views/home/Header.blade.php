@@ -1,9 +1,29 @@
 <section id="topbar" class="topbar d-flex align-items-center">
     <div class="container d-flex justify-content-center justify-content-md-between">
         <div class="contact-info d-flex align-items-center">
-            <i class="bi bi-envelope d-flex align-items-center"><a
-                    href="mailto:contact@example.com">contact@example.com</a></i>
-            <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
+
+            <div id="google_translate_element" style="float: right; margin-top: 5px">
+                <div class="skiptranslate goog-te-gadget" dir="ltr" style="">
+                    <div id=":0.targetLanguage" class="goog-te-gadget-simple" style="white-space: nowrap">
+                    </div>
+                </div>
+            </div>
+
+            <script type="text/javascript">
+                function googleTranslateElementInit() {
+                                new google.translate.TranslateElement({
+                                        pageLanguage: "ID",
+                                        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                                    },
+                                    "google_translate_element"
+                                );
+                            }
+            </script>
+
+            <script type="text/javascript"
+                src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+            </script>
+
         </div>
         <div class="social-links d-none d-md-flex align-items-center">
             <a href="#" class="twitter"><i class="bi bi-tiktok"></i></a>
@@ -20,8 +40,7 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
         <a href="{{ url('/') }}" class="logo d-flex align-items-center">
             <!-- Uncomment the line below if you also wish to use an image logo -->
-            <img src="{{ asset('miti.png') }}" alt="Miti" width="100" class="rounded">
-            {{-- <h1>Miti Community</h2> --}}
+            <img src="{{ asset('/img/Miti.png') }}" alt="Miti" width="100" class="rounded">
         </a>
         <nav id="navbar" class="navbar">
             <ul>

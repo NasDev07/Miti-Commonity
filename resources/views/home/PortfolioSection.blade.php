@@ -9,8 +9,13 @@
 
         <div class="section-header">
             <h2>Gallery Miti Comunity</h2>
-            <p>Quam sed id excepturi ccusantium dolorem ut quis dolores nisi llum nostrum enim velit qui ut et
-                autem uia reprehenderit sunt deleniti</p>
+            <p>
+                Miti Community didirikan oleh sekelompok mahasiswa IT yang ingin menciptakan wadah bagi mahasiswa untuk
+                belajar, berdiskusi, dan berkolaborasi dalam bidang IT. Komunitas ini memiliki berbagai divisi, seperti
+                divisi software development, divisi UI/UX design, divisi cybersecurity, dan divisi data science. Setiap
+                divisi memiliki fokus dan kegiatan yang berbeda-beda, sehingga mahasiswa dapat memilih sesuai dengan
+                minat dan bakat mereka.
+            </p>
         </div>
 
         <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry"

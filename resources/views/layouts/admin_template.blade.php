@@ -12,7 +12,7 @@
     <meta name="description" content="" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="{{ asset('miti.png') }}" />
+    <link rel="icon" type="image/x-icon" href="{{ asset('/img/Miti.png') }}" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,7 +22,7 @@
         rel="stylesheet" />
 
     <!-- Icons. Uncomment required icon fonts -->
-    <link rel="stylesheet" href="{{ asset('miti.png') }}" />
+    <link rel="stylesheet" href="{{ asset('/img/Miti.png') }}" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -70,7 +70,7 @@
 
                     <a href="{{ route('dashboard') }}" class="app-brand-link">
                         <span class="app-brand-logo demo">
-                            <img src="{{ asset('miti.png') }}" alt="Miti" width="60" class="rounded">
+                            <img src="{{ asset('/img/Miti.png') }}" alt="Miti" width="60" class="rounded">
                         </span>
                         {{-- <span class="app-brand-text demo menu-text fw-bolder ms-2">Miti</span> --}}
                     </a>
@@ -126,16 +126,16 @@
                     <li class="menu-header small text-uppercase">
                         <span class="menu-header-text">Pages User</span>
                     </li>
-                    <li class="menu-item">
-                        <a href="#" class="menu-link">
+                    <li class="menu-item @if (isset($datauser)) {{ $datauser }}@endif">
+                        <a href="{{route('data-user.index')}}" class="menu-link">
                             <i class="menu-icon tf-icons bx bx-user-circle"></i>
-                            <div data-i18n="Account Settings">Data Anda</div>
+                            <div data-i18n="Account Settings">My Account</div>
                         </a>
                     </li>
                     <li class="menu-item">
                         <a href="#" class="menu-link">
                             <i class="menu-icon tf-icons bx bx-user-circle"></i>
-                            <div data-i18n="Account Settings">Kelas</div>
+                            <div data-i18n="Account Settings">My Class</div>
                         </a>
                     </li>
                 </ul>
@@ -157,43 +157,16 @@
                         @auth
                         <ul class="navbar-nav flex-row align-items-center ms-auto">
                             <!-- Place this tag where you want the button to render. -->
+
                             <li class="nav-item lh-1 me-3">
                                 <strong>
                                     Welcome, {{ auth()->user()->name }}
                                 </strong>
                             </li>
 
+
                             <!-- User -->
-                            <li class="nav-item navbar-dropdown dropdown-user dropdown">
-                                <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);"
-                                    data-bs-toggle="dropdown">
-                                    <div class="avatar avatar-online">
-                                        <img src="../assets/img/avatars/1.png" alt
-                                            class="w-px-40 h-auto rounded-circle" />
-                                    </div>
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-end">
-                                    <li>
-                                        <a class="dropdown-item" href="{{ route('profile.edit') }}">
-                                            <i class="bx bx-user me-2"></i>
-                                            <span class="align-middle">My Profile</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <div class="dropdown-divider"></div>
-                                    </li>
-                                    <li>
-                                        <form onsubmit="return confirm('are you sore?')" action="{{ route('logout') }}"
-                                            method="POST">
-                                            @csrf
-                                            <button type="submit" class="dropdown-item">
-                                                <i class="bx bx-power-off me-2"></i>
-                                                <span class="align-middle">Log Out</span>
-                                            </button>
-                                        </form>
-                                    </li>
-                                </ul>
-                            </li>
+                            @include('home.userNavbar')
                             <!--/ User -->
                         </ul>
                         @else
@@ -220,7 +193,7 @@
                         <div
                             class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
                             <div class="mb-2 mb-md-0">
-                                Miti Community 2023 -
+                                Miti Community 2022 -
                                 <script>
                                     document.write(new Date().getFullYear());
                                 </script>
@@ -238,6 +211,10 @@
 
         <!-- Overlay -->
         <div class="layout-overlay layout-menu-toggle"></div>
+        <div class="buy-now">
+            <a href="https://wa.me/082267429797?text=Assalamualaikum%20wr.wb%20saya%20anggota%20Miti%20Community"
+                target="_blank" class="btn btn-primary btn-buy-now"> Chats Admin <i class="bi bi-whatsapp"></i></a>
+        </div>
     </div>
     <!-- / Layout wrapper -->
 

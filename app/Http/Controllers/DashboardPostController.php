@@ -41,7 +41,7 @@ class DashboardPostController extends Controller
             $validatedData = $request->validate([
                 'title' => 'required|min:5',
                 'category_id' => 'required',
-                'image' => 'image|file|mimes:jpeg,png,jpg,max:3024',
+                'image' => 'image|file|mimes:jpeg,png,jpg,max:3072',
                 'body' => 'required|min:10',
             ]);
 
@@ -95,7 +95,7 @@ class DashboardPostController extends Controller
             $validatedData = $request->validate([
                 'title' => 'required|min:5',
                 'category_id' => 'required',
-                'image' => 'image|file|mimes:jpeg,png,jpg|max:1024',
+                'image' => 'image|file|mimes:jpeg,png,jpg,max:3072',
                 'body' => 'required|min:10',
             ]);
 

@@ -10,8 +10,8 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="{{ asset('miti.png') }}" rel="icon">
-    <link href="{{ asset('miti.png') }}" rel="apple-touch-icon">
+    <link href="{{ asset('/img/Miti.png') }}" rel="icon">
+    <link href="{{ asset('/img/Miti.png') }}" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,7 +47,6 @@
     <a href="#" class="scroll-top d-flex align-items-center justify-content-center active"><i
             class="bi bi-arrow-up-short"></i></a>
 
-    <div id="preloader"></div>
 
     <!-- Vendor JS Files -->
     <script src="{{ asset('assets_user/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>

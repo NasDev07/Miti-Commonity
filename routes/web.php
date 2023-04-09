@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UserProdukController as UserProdukController;
 use App\Http\Controllers\UserPemakaianController as UserPemakaianController;
+use App\Http\Controllers\DatadiriUserController as UserDatadiriUserController;
 
 // Admin
 use App\Http\Controllers\SofdeletedController;
@@ -60,6 +61,10 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+Route::middleware(['auth'])->group(function () {
+    Route::resource('data-user', UserDatadiriUserController::class);
+});
+
 
 // perbaikan dari Nas untuk admin
 // dashboard
@@ -90,7 +95,6 @@ Route::middleware(['auth', 'admin'])->group(function () {
 });
 Route::get('/pakaiDelete', [adminPemakaianController::class, 'postsdel'])->middleware('auth', 'admin');
 Route::get('/pakai/{id}/restore', [adminPemakaianController::class, 'restore'])->middleware('auth', 'admin');
-
 
 // not found
 Route::fallback(function () {

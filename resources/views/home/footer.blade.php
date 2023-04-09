@@ -6,8 +6,8 @@
                 <a href="{{ url('/') }}" class="logo d-flex align-items-center">
                     <span>Miti Community</span>
                 </a>
-                <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita
-                    valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+                <p>Miti Community (Mahasiswa IT Indonesia) Adalah komunitas yang bertujuan untuk mengasah skil mahasiswa
+                    dalam bidang IT</p>
                 <div class="social-links d-flex mt-4">
                     <a href="#" class="twitter"><i class="bi bi-tiktok"></i></a>
                     <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -19,22 +19,20 @@
             <div class="col-lg-2 col-6 footer-links">
                 <h4>Useful Links</h4>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Terms of service</a></li>
-                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="{{ url('/contact') }}">About us</a></li>
+                    <li><a href="{{ url('/blog-posts') }}">Artikel</a></li>
+                    <li><a href="{{ url('/produks') }}">Gallery</a></li>
+                    <li><a href="{{ url('/cara-pemakaian') }}">Pertanyaan Populer</a></li>
                 </ul>
             </div>
 
             <div class="col-lg-2 col-6 footer-links">
-                <h4>Our Services</h4>
+                <h4>Support</h4>
                 <ul>
-                    <li><a href="#">Web Design</a></li>
-                    <li><a href="#">Web Development</a></li>
-                    <li><a href="#">Product Management</a></li>
-                    <li><a href="#">Marketing</a></li>
-                    <li><a href="#">Graphic Design</a></li>
+                    <li><a href="https://unimal.ac.id/" target="_black">UNIMAL</a></li>
+                    <li><a href="https://taiwanhalal.com/" target="_black">Taiwan Halal</a></li>
+                    <li><a href="https://sisteminformasi.unimal.ac.id/" target="_black">Sistem Informasi</a></li>
                 </ul>
             </div>
 
@@ -55,7 +53,7 @@
 
     <div class="container mt-4">
         <div class="copyright">
-            &copy; Copyright <strong><span>Miti Community</span></strong>. 2023 -
+            &copy; Copyright <strong><span>Miti Community</span></strong>. 2022 -
             <script>
                 document.write(new Date().getFullYear());
             </script>

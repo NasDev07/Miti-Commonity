@@ -9,40 +9,55 @@
 
         <div class="row gy-4">
             <div class="col-lg-6">
-                <h3>Voluptatem dignissimos provident quasi corporis</h3>
-                <img src="assets_user/img/about.jpg" class="img-fluid rounded-4 mb-4" alt="">
-                <p>Ut fugiat ut sunt quia veniam. Voluptate perferendis perspiciatis quod nisi et. Placeat debitis quia
-                    recusandae odit et consequatur voluptatem. Dignissimos pariatur consectetur fugiat voluptas ea.</p>
-                <p>Temporibus nihil enim deserunt sed ea. Provident sit expedita aut cupiditate nihil vitae quo officia
-                    vel. Blanditiis eligendi possimus et in cum. Quidem eos ut sint rem veniam qui. Ut ut repellendus
-                    nobis tempore doloribus debitis explicabo similique sit. Accusantium sed ut omnis beatae neque
-                    deleniti repellendus.</p>
+                <p class="fw-bold">Miti Community (Mahasiswa IT Indonesia) Adalah komunitas yang bertujuan untuk
+                    mengasah skil mahasiswa dalam bidang IT.</p>
+                <img src="/img/miti1.jpg" class="img-fluid rounded-4 mb-4" alt="">
+                <p>komunitas yang berfokus pada pengembangan keterampilan mahasiswa di bidang IT di Indonesia. Komunitas
+                    ini dapat memberikan dukungan dan sumber daya untuk mahasiswa yang tertarik untuk meningkatkan
+                    keterampilan mereka di bidang IT.</p>
+                <p>Dalam Miti Community, mahasiswa dapat berpartisipasi dalam berbagai kegiatan dan program, seperti
+                    pelatihan, workshop, seminar, dan kompetisi. Dalam kegiatan-kegiatan tersebut, mahasiswa dapat
+                    belajar tentang topik-topik seperti pemrograman, pengembangan web, desain grafis, keamanan siber,
+                    dan banyak lagi. Dengan berpartisipasi dalam kegiatan-kegiatan ini, mahasiswa dapat mengembangkan
+                    keterampilan mereka dan memperluas pengetahuan mereka di bidang IT.</p>
+                <p>
+                    Selain itu, Miti Community juga dapat memberikan kesempatan bagi mahasiswa untuk menjalin hubungan
+                    dengan sesama mahasiswa dan profesional di bidang IT. Ini dapat membuka peluang untuk magang atau
+                    bekerja di perusahaan IT yang terkait dengan Miti Community.
+                </p>
+                <p>
+                    Secara keseluruhan, Miti Community dapat memberikan manfaat yang sangat besar bagi mahasiswa di
+                    Indonesia yang tertarik dalam bidang IT. Dengan dukungan dan sumber daya yang tersedia melalui
+                    komunitas ini, mahasiswa dapat mengasah keterampilan mereka dan membangun jaringan yang berguna di
+                    industri IT.
+                </p>
             </div>
             <div class="col-lg-6">
                 <div class="content ps-0 ps-lg-5">
-                    <p class="fst-italic">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore
-                        magna aliqua.
+                    <p class="fw-bold">
+                        Bergabung dalam Miti Community (Mahasiswa IT Indonesia)
+                    </p>
+                    <p>
+                        Untuk bergabung dengan Miti Community (Mahasiswa IT Indonesia), ada beberapa langkah yang harus
+                        diikuti.
                     </p>
                     <ul>
-                        <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat.</li>
-                        <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate
-                            velit.</li>
-                        <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda
-                            mastiro dolore eu fugiat nulla pariatur.</li>
+                        <li><i class="bi bi-check-circle-fill"></i> pendaftaran yang tersedia di situs web Miti
+                            Community, Pendaftaran berisi informasi seperti nama, email, universitas, NoHp, dll.</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Bergabung dengan grup media sosial: Setelah menerima
+                            konfirmasi, peserta dapat bergabung dengan grup media sosial Miti Community, seperti grup
+                            WhatsApp.</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Ikuti acara Miti Community: Miti Community sering
+                            mengadakan acara seperti workshop, seminar, dan kompetisi yang dapat diikuti oleh anggota.
+                        </li>
                     </ul>
                     <p>
-                        Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                        in voluptate
-                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                        proident
+                        Dengan mengikuti langkah-langkah di atas, peserta dapat bergabung dengan Miti Community dan
+                        menjadi bagian dari komunitas mahasiswa IT yang aktif dan berkembang di Indonesia.
                     </p>
 
                     <div class="position-relative mt-4">
-                        <img src="assets_user/img/about.jpg" class="img-fluid rounded-4 mb-4" alt="">
+                        <img src="/img/miti2.jpg" class="img-fluid rounded-4 mb-4" alt="">
                     </div>
                 </div>
             </div>

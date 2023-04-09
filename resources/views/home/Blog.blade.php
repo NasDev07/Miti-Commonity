@@ -8,8 +8,8 @@
             <div
                 class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
                 <h2>Welcome to <span>Miti Community</span></h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis voluptatibus nesciunt et
-                    blanditiis nulla possimus laborum sed sapiente obcaecati suscipit!</p>
+                <p>Miti Community (Mahasiswa IT Indonesia) Adalah komunitas yang bertujuan untuk mengasah skil mahasiswa
+                    dalam bidang IT</p>
                 <div class="d-flex justify-content-center justify-content-lg-start">
                     @if (Route::has('login'))
                     <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
@@ -31,8 +31,7 @@
                 </div>
             </div>
             <div class="col-lg-6 order-1 order-lg-2">
-                <img src="https://www.prakerja.go.id/images/logo-digital-platform/img_girl4.png"
-                    class="img-fluid rounded" alt="" data-aos="zoom-out" data-aos-delay="100">
+                <img src="/img/hero-bg.png" class="img-fluid rounded" alt="" data-aos="zoom-out" data-aos-delay="60">
             </div>
         </div>
     </div>
@@ -47,9 +46,9 @@
     <div class="container">
 
         <div class="section-header">
-            <h2>Gallery</h2>
-            <p>Quam sed id excepturi ccusantium dolorem ut quis dolores nisi llum nostrum enim velit qui ut et
-                autem uia reprehenderit sunt deleniti.</p>
+            <h2>Gallery Populer</h2>
+            <p>Miti Community (Mahasiswa IT Indonesia) komunitas yang bertujuan untuk mengasah skil mahasiswa dalam
+                bidang IT</p>
         </div>
 
         <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry"
@@ -86,9 +85,9 @@
     <div class="container">
 
         <div class="section-header">
-            <h2>Artikel Tentang Miti</h2>
-            <p>Consequatur libero assumenda est voluptatem est quidem illum et officia imilique qui vel
-                architecto accusamus fugit aut qui distinctio.</p>
+            <h2>Artikel Populer Tentang Miti</h2>
+            <p>Miti Community (Mahasiswa IT Indonesia) komunitas yang bertujuan untuk mengasah skil mahasiswa dalam
+                bidang IT</p>
         </div>
 
         <div class="row gy-4">

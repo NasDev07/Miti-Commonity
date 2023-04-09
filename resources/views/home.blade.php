@@ -5,7 +5,7 @@
     <!-- End Stats Counter Section -->
 
     <!-- ======= Clients Section ======= -->
-    @include('home.Clients-section')
+    @include('home.Clients-Section')
     <!-- End Clients Section -->
 
     <!-- ======= Pricing Section ======= -->

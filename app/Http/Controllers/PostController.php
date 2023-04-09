@@ -17,7 +17,7 @@ class PostController extends Controller
         $pakai = Pemakaian::latest()->take(5)->get();
         $dataList = Post::latest()->take(3)->get();
         $dataProduk = Produk::latest()->take(3)->get();
-        return view('home.blog', compact('pakai', 'dataList', 'dataProduk'));
+        return view('home.Blog', compact('pakai', 'dataList', 'dataProduk'));
     }
 
     // public function show($name)
