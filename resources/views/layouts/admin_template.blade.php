@@ -132,12 +132,6 @@
                             <div data-i18n="Account Settings">My Account</div>
                         </a>
                     </li>
-                    <li class="menu-item">
-                        <a href="#" class="menu-link">
-                            <i class="menu-icon tf-icons bx bx-user-circle"></i>
-                            <div data-i18n="Account Settings">My Class</div>
-                        </a>
-                    </li>
                 </ul>
             </aside>
             <!-- / Menu -->

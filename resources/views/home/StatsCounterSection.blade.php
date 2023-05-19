@@ -2,7 +2,7 @@
     <div class="container" data-aos="fade-up">
         <div class="row gy-4 align-items-center">
             <div class="col-lg-6">
-                <img src="/img/komunitas-bg.png" alt="" class="img-fluid">
+                <img src="/img/komunitas-bg.png" alt="Miti" class="img-fluid">
             </div>
             <div class="col-lg-6">
                 <div class="stats-item d-flex align-items-center">

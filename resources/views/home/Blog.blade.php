@@ -62,8 +62,8 @@
                             class="glightbox"><img src="{{ asset('storage/' . $data->image) }}" class="img-fluid"
                                 alt=""></a>
                         <div class="portfolio-info">
-                            <h4><a href="{{ route('produks.show', $data->id) }}" title="More Details">{{ $data->title
-                                    }}</a>
+                            <h4>
+                                {{ $data->title}}
                             </h4>
                         </div>
                     </div>

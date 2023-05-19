@@ -47,6 +47,7 @@
                 <li><a href="{{ url('/') }}">Home</a></li>
                 <li><a href="{{ url('/produks') }}">Gallery</a></li>
                 <li><a href="{{ url('/blog-posts') }}">Blog</a></li>
+                <li><a href="{{ url('/team') }}">Team</a></li>
                 <li><a href="{{ url('/contact') }}">Contact</a></li>
 
                 <li>

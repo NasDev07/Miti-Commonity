@@ -47,7 +47,7 @@
     <a href="#" class="scroll-top d-flex align-items-center justify-content-center active"><i
             class="bi bi-arrow-up-short"></i></a>
 
-
+    <div id="preloader"></div>
     <!-- Vendor JS Files -->
     <script src="{{ asset('assets_user/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('assets_user/vendor/aos/aos.js') }}"></script>

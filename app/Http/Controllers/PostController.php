@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Post;
 use App\Models\User;
 use App\Models\Category;
+use App\Models\Datadiri;
 use App\Models\Pemakaian;
 use App\Models\Produk;
 use Exception;
@@ -35,7 +36,8 @@ class PostController extends Controller
     {
         try {
             $post = Post::findOrFail($id);
-            return view('home.SigleBlog', compact('post'));
+            $silderpost = Post::latest()->take(6)->get();
+            return view('home.SigleBlog', compact('post', 'silderpost'));
         } catch (Exception $e) {
             return view('home.notfound');
         }
@@ -46,5 +48,17 @@ class PostController extends Controller
         $menuBlog = 'active';
         $dataitem = Post::latest()->paginate(3);
         return view('home.home-blog', compact('dataitem', 'menuBlog'));
+    }
+
+    public function team()
+    {
+        $teammiti = Datadiri::all();
+        return view('home.team', compact('teammiti'));
+    }
+
+    public function teamdetail($id)
+    {
+        $teamdetail = Datadiri::findOrFail($id);
+        return view('home.detail-produk', compact('teamdetail'));
     }
 }

@@ -1,63 +1,48 @@
 @extends('welcome')
 
-@section('title', 'Detail Produk')
+@section('title', 'Detail Team')
 
 @section('content')
+<header class="header">
+    <div class="container">
+        <h1 class="text-center fw-bold text-white">{{ $teamdetail->author->name }}</h1>
+    </div>
+</header>
+
 <section id="blog" class="blog">
     <div class="container" data-aos="fade-up">
-        <div class="row g-5">
-            <div class="col-lg-7">
+        <div class="row">
+            <div class="col-lg-4">
                 <article class="blog-details">
-                    <div class="post-img">
-                        @if ($dataproduk->image != '')
-                        <div class="mb-2">
-                            <img src="{{ asset('storage/' . $dataproduk->image) }}" alt="" class="img-fluid">
-                        </div>
-                        @else
-                        <div class="mb-2">
-                            <img src="{{ asset('images/avatar.jpg') }}" alt="Avatar" width="200px">
-                        </div>
-                        @endif
+                    <div class="member">
+                        <img src="{{ asset('storage/' . $teamdetail->image) }}" alt="" class="img-fluid rounded">
                     </div>
-                    <div class="content">
-                        {!! $dataproduk->body !!}
-                    </div><!-- End post content -->
-                    <br><br>
-                    <a href="/cara-pemakaian">Cara Memakai Produk</a>
-                </article><!-- End blog post -->
+                    <h2 class="section-title mt-4 fw-semibold">My Contact</h2>
+                    <div class="section-content">
+                        <div style="text-align: justify">
+                            <p>Email : <strong>{{ $teamdetail->author->email }}</strong></p>
+                            <p>Universitas : <strong>{{ $teamdetail->univ }}</strong></p>
+                            <p>WA : <strong>{{ $teamdetail->whatsapp }}</strong></p>
+                            <p>Address : <strong>{{ $teamdetail->location }}</strong></p>
+                            <p>Gender : <strong>{{ $teamdetail->gender }}</strong></p>
+                        </div>
+                        <div class="social mt-4">
+                            <a href="{{ $teamdetail->akungit }}" target="_black"><img src="/img/gethub.png" alt=""></a>
+                            <a href="{{ $teamdetail->akunig }}" target="_black"><img src="/img/instagram.png"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                </article>
             </div>
-
-            <div class="col-lg-5">
-                <div class="sidebar">
-                    <div class="sidebar-item recent-posts">
-                        <div class="mt-1">
-                            <li class="d-flex align-items-end"><i class="bi bi-person"></i> <a href="#">{{
-                                    $dataproduk->author->name }}</a></li>
-                            <div class="post-item my-2">
-                                <h2 class="fw-bold">{{ $dataproduk->title }}</h2>
-                                <h6><span class="fw-bold">Rp.</span> {{ $dataproduk->harga }}</h6>
-                            </div>
-                            <span>{{ $dataproduk->categori->name }}</span>
-                            <hr>
-                            <li class="d-flex justify-content-between">
-                                <p>Pengiriman :</p>
-                                <p> Aceh Utara, Lhokseumawe </p>
-                            </li>
-                            <li class="d-flex justify-content-between">
-                                <p>Paket :</p>
-                                <p> Platinum, Silver, Gold </p>
-                            </li>
-                            <li class="d-flex justify-content-start">
-                                <a href="#" class="btn btn-success">Order</a>
-                            </li>
-                        </div>
+            <div class="col-lg-8">
+                <article class="blog-details">
+                    <div class="content" style="text-align: justify">
+                        {!! $teamdetail->body !!}
                     </div>
-                </div><!-- End sidebar recent posts-->
-            </div><!-- End Blog Sidebar -->
-
+                </article>
+            </div>
         </div>
     </div>
-
-    </div>
 </section>
+
 @endsection

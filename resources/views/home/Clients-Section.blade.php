@@ -3,7 +3,8 @@
 
         <div class="clients-slider swiper">
             <div class="swiper-wrapper align-items-center">
-                <div class="swiper-slide"><img src="{{ asset('miti.png') }}" class="img-fluid" alt="Miti Community">
+                <div class="swiper-slide"><img src="{{ asset('/img/Miti.png') }}" class="img-fluid"
+                        alt="Miti Community">
                 </div>
                 <div class="swiper-slide"><img src="https://pmb.unimal.ac.id/images/Logo_UNIMAL_Mobile.png"
                         class="img-fluid" alt="Unimal">

@@ -48,53 +48,18 @@
                     <div class="sidebar-item recent-posts">
                         <h3 class="sidebar-title">Recent Posts</h3>
                         <div class="mt-3">
+                            @foreach ($silderpost as $item)
                             <div class="post-item mt-3">
-                                <img src="{{ asset('storage/' . $post->image) }}" alt="">
+                                <img src="{{ asset('storage/' . $item->image) }}" alt="">
                                 <div>
-                                    <h4><a href="{{ route('post.show', $post->id) }}">{{ htmlspecialchars($post->title)
+                                    <h4><a href="{{ route('post.show', $item->id) }}">{{ htmlspecialchars($post->title)
                                             }}</a>
                                     </h4>
-                                    <time datetime="{{ $post->created_at->format('Y-m-d') }}">{{
-                                        $post->created_at->format('M j, Y') }}</time>
+                                    <time datetime="{{ $item->created_at->format('Y-m-d') }}">{{
+                                        $item->created_at->format('M j, Y') }}</time>
                                 </div>
                             </div><!-- End recent post item-->
-
-                            <div class="post-item">
-                                <img src="/assets_user/img/blog/blog-recent-2.jpg" alt="">
-                                <div>
-                                    <h4><a href="blog-details.html">Quidem autem et impedit</a></h4>
-                                    <time datetime="2020-01-01">Jan 1, 2020</time>
-                                </div>
-                            </div>
-                            <!-- End recent post item-->
-
-                            <div class="post-item">
-                                <img src="/assets_user/img/blog/blog-recent-3.jpg" alt="">
-                                <div>
-                                    <h4><a href="blog-details.html">Id quia et et ut maxime similique occaecati ut</a>
-                                    </h4>
-                                    <time datetime="2020-01-01">Jan 1, 2020</time>
-                                </div>
-                            </div>
-                            <!-- End recent post item-->
-
-                            <div class="post-item">
-                                <img src="/assets_user/img/blog/blog-recent-4.jpg" alt="">
-                                <div>
-                                    <h4><a href="blog-details.html">Laborum corporis quo dara net para</a></h4>
-                                    <time datetime="2020-01-01">Jan 1, 2020</time>
-                                </div>
-                            </div>
-                            <!-- End recent post item-->
-
-                            <div class="post-item">
-                                <img src="/assets_user/img/blog/blog-recent-5.jpg" alt="">
-                                <div>
-                                    <h4><a href="blog-details.html">Et dolores corrupti quae illo quod dolor</a></h4>
-                                    <time datetime="2020-01-01">Jan 1, 2020</time>
-                                </div>
-                            </div>
-                            <!-- End recent post item-->
+                            @endforeach
                         </div>
                     </div><!-- End sidebar recent posts-->
                 </div><!-- End Blog Sidebar -->

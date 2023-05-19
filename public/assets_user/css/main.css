@@ -214,7 +214,7 @@ section {
     }
 
     100% {
-        transform: rotate(360deg);
+        transform: rotate(260deg);
     }
 }
 
@@ -224,7 +224,7 @@ section {
     }
 
     100% {
-        transform: rotate(360deg);
+        transform: rotate(260deg);
     }
 }
 

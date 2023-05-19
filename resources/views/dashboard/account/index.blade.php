@@ -27,6 +27,8 @@
                                         onchange="proviewImage()" required />
                                 </label>
                                 <p class="text-muted mb-0">Allowed JPG, PNG. Max size of 800K</p>
+                                <p class="text-muted mb-0">Ukuran Resolusi : 1500 x 1500 pixels</p>
+                                <p class="text-muted mb-0">Tampilan dilayar : 644 x 644 pixels</p>
                             </div>
                         </div>
                     </div>

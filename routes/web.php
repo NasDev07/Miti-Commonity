@@ -42,6 +42,9 @@ Route::get('/produks', [UserProdukController::class, 'index']);
 Route::get('produks-detail/{id}/show', [UserProdukController::class, 'show'])->name('produks.show');
 // route cara pemakaian
 Route::get('/cara-pemakaian', [UserPemakaianController::class, 'index']);
+// Team
+Route::get('/team', [UserHomeController::class, 'team']);
+Route::get('/team-show/{id}', [UserHomeController::class, 'teamdetail'])->name('team.show');
 // contact
 Route::get('/contact', function () {
     return view('home.contact');
